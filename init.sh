@@ -5,6 +5,7 @@ DEFAULT_ROUTE=$(ip route show default | awk '/default/ {print $3}')
 IFACE=$(ip route show | awk '(NR == 2) {print $3}')
 JAVA_VERSION=`java -version 2>&1 |awk 'NR==1{ gsub(/"/,""); print $3 }'`
 MYIP=$(ip route show | awk '(NR == 2) {print $9}')
+FLAG=YVc1MFpYSnBkWFI3VFRBeFgxVnVYelZEY2pGUU4xOUxNVVJFTVROZlAzMD0=
 ######## Update Kali
 function Desktopmanager {
 clear
